@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f3f4f2">
+<meta name="description" content="Selected work by Yun Ma (fu.0). Installations, creative coding, motion and film.">
+<title>fu.0 — Yun Ma</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="assets/portfolio.js"></script>
+</head>
+<body>
+<a class="skip" href="#work">Skip to work</a>
+<header class="bar">
+  <a class="signature" href="#top" aria-label="Yun Ma, back to top">[Yun Ma]</a>
+  <nav aria-label="Main navigation"><a href="#work">(Work)</a><a href="#about">(About)</a><a href="#contact">(Contact)</a></nav>
+  <span class="byline">PORTFOLIO 2026</span>
+</header>
+<main id="top">
+<section class="sequence" aria-label="A study in assembly">
+  <div class="stage">
+    <div class="grid" aria-hidden="true"></div>
+    <div class="name">
+      <h1 aria-label="fu.0"><span class="name-mark"><em>fu</em><span>.</span><svg viewBox="0 0 8 10" aria-hidden="true" focusable="false"><path fill="currentColor" fill-rule="evenodd" d="M2 0H6V1H7V2H8V8H7V9H6V10H2V9H1V8H0V2H1V1H2ZM2.15 1.35H5.85V2.15H6.65V7.85H5.85V8.65H2.15V7.85H1.35V2.15H2.15Z"/></svg></span></h1>
+      <nav class="disciplines" aria-label="Work categories">
+        <a href="#installations">[Installations]</a>
+        <a href="#web">[p5.js &amp; Web]</a>
+        <a href="#motion">[Motion &amp; Film]</a>
+      </nav>
+    </div>
+    <video class="wall-source" id="wall-film" data-wall-clip src="assets/built-loop.mp4" muted playsinline preload="metadata" aria-hidden="true"></video>
+    <img class="wall-source" id="wall-still" src="assets/built-still.jpg" alt="" aria-hidden="true">
+    <div class="poster" aria-hidden="true"></div>
+    <canvas id="sculpture" aria-label="A three-dimensional ceramic tile wall with a moving image from Built Un-built" role="img"></canvas>
+    <div class="chapter-title" aria-hidden="true"><span></span></div>
+    <div class="stage-foot">
+      <a class="scroll-link" href="#discover">Explore <span aria-hidden="true">↓</span></a>
+      <button class="film-control" type="button" aria-label="Pause moving image" hidden></button>
+      <div class="readout" aria-hidden="true"><div class="progress"><i></i></div></div>
+    </div>
+    <nav class="tile-nav" aria-label="Explore the three work categories" inert>
+      <a href="#installations">Installations</a>
+      <a href="#web">p5.js &amp; Web</a>
+      <a href="#motion">Motion &amp; Film</a>
+    </nav>
+  </div>
+  <div id="discover" aria-hidden="true"></div>
+</section>
+<section class="work section" id="work" aria-labelledby="work-title">
+  <div class="section-heading"><span class="eyebrow">Index</span><h2 id="work-title"><em>Selected</em> Work</h2></div>
+  <nav class="filters" aria-label="Filter work">
+    <a href="#work" aria-current="true">All</a><a id="installations" href="#installations">Installations</a><a id="web" href="#web">p5.js &amp; Web</a><a id="motion" href="#motion">Motion &amp; Film</a>
+  </nav>
+  <div id="projects" class="projects">
+    <article class="feature" data-category="installations">
+      <figure><img src="assets/built.jpg" alt="Built Un-built project cover showing concrete and wire mesh" loading="lazy" width="1600" height="900"><figcaption>From the project documentation</figcaption></figure>
+      <details open><summary>Built Un-built <span>Installation</span></summary><p>Concrete, metal and wire mesh register a viewer’s proximity through sound. The installation explores the tension and instability of a city caught between construction and demolition.</p></details>
+    </article>
+    <article data-category="installations"><details><summary>Balance <span>Installation</span></summary><p>Project documentation will be added here.</p></details></article>
+    <article data-category="installations"><details><summary>Subway Daydream Device <span>Speculative installation</span></summary><p>A speculative device that makes room for daydreaming on a New York subway commute. Project documentation will be added here.</p></details></article>
+    <article data-category="research"><details><summary>Fences / IRON ATLAS <span>Research in progress</span></summary><p>Research and process materials will be added here.</p></details></article>
+    <article data-category="research"><details><summary>Weft &amp; Waft <span>Proposal</span></summary><p>Proposal materials will be added here.</p></details></article>
+    <article data-category="web" hidden><h3>p5.js &amp; Web</h3><p>Project links and documentation will be added here.</p></article>
+    <article data-category="motion" hidden><h3>Motion &amp; Film</h3><p>Films, credits and project documentation will be added here.</p></article>
+  </div>
+</section>
+<section class="section brief" id="about"><h2><em>About</em></h2><div class="bio"><p>I’m Yun Ma (fu.0). I study Design &amp; Technology at Parsons School of Design in New York.</p><p>I started in graphic design and visual storytelling. My current work spans interactive installations, creative coding, web experiences, experimental games, and moving image.</p></div></section>
+<footer class="section brief" id="contact"><h2><em>Contact</em></h2><address class="contact-links"><a href="mailto:mac588@newschool.edu"><span>[Email]</span> mac588@newschool.edu</a><a href="tel:+16465753952"><span>[Tel]</span> +1 (646) 575-3952</a></address><a href="#top" class="back">Back to top</a></footer>
+</main>
+</body>
+</html>

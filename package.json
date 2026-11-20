@@ -1,0 +1,8 @@
+{
+  "name": "fu-lin-portfolio",
+  "private": true,
+  "type": "module",
+  "scripts": {"build":"esbuild src/main.js --bundle --minify --format=iife --outfile=assets/portfolio.js"},
+  "dependencies": {"three":"0.180.0"},
+  "devDependencies": {"esbuild":"0.25.12"}
+}
