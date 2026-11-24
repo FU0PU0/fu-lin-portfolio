@@ -1,0 +1,71 @@
+/* Editorial project archive v3. All other website styles, especially 3D/sculpture, stay unchanged. */
+#work{scroll-margin-top:calc(var(--bar,56px) + 16px)}
+#work .section-heading{margin-bottom:clamp(24px,4vw,64px)}
+#work .filters{position:sticky;top:var(--bar,56px);z-index:5;background:var(--paper,#f3f4f2);display:flex;flex-wrap:wrap;gap:8px clamp(15px,2vw,34px);padding:15px 0 16px;margin:0;border-top:1px solid var(--rule,#cbd1ce);border-bottom:1px solid var(--rule,#cbd1ce)}
+#work .filters a{display:inline-block;font:500 clamp(12px,1.08vw,15px)/1.4 var(--mono,monospace);letter-spacing:-.018em;padding:5px 0;text-decoration:none;white-space:nowrap}
+#work .filters a:hover,#work .filters a:focus-visible{border-bottom:1px solid currentColor}
+#work .filters a[aria-current="true"]{font-weight:750;border-bottom:1px solid var(--ink,#18201f);text-decoration:none}
+#projects{max-width:none}
+#projects .portfolio-category{position:relative;scroll-margin-top:calc(var(--bar,56px) + 88px);padding-top:clamp(44px,6vw,82px);margin-bottom:clamp(35px,6vw,85px)}
+#projects .portfolio-category-heading{display:grid;grid-template-columns:minmax(85px,.65fr) minmax(0,2.15fr) minmax(175px,1fr);column-gap:clamp(12px,2vw,34px);align-items:baseline;border-bottom:1px solid var(--ink,#18201f);padding-bottom:clamp(15px,2vw,26px);margin-bottom:0}
+#projects .portfolio-category-index{font:12px/1.5 var(--mono,monospace);color:var(--muted,#53615e)}
+#projects .portfolio-category-heading h3{font:450 clamp(39px,6.2vw,100px)/.96 "Helvetica Neue",Arial,sans-serif;letter-spacing:-.068em;margin:0;overflow-wrap:anywhere}
+#projects .portfolio-category-description{font:clamp(13px,1.05vw,17px)/1.4 "Helvetica Neue",Arial,sans-serif;color:var(--muted,#53615e);max-width:30ch;margin:0}
+#projects .work-item,#projects .work-item[hidden]{display:grid!important;grid-template-columns:minmax(0,.85fr) minmax(0,1.22fr);column-gap:clamp(24px,5.5vw,96px);row-gap:0;align-items:start;position:relative;margin:0;padding:clamp(32px,4vw,70px) 0 clamp(42px,5vw,86px);border-bottom:1px solid var(--rule,#cbd1ce)}
+#projects .work-item-copy{min-width:0;align-self:center;padding:0 clamp(0px,1.2vw,18px) 0 0}
+#projects .work-item-number{display:block;font:11px/1.6 var(--mono,monospace);letter-spacing:.08em;color:var(--muted,#53615e);text-transform:uppercase;margin-bottom:clamp(18px,2vw,37px)}
+#projects .work-item-title{font:450 clamp(39px,5vw,82px)/.99 "Helvetica Neue",Arial,sans-serif;letter-spacing:-.065em;margin:0 0 clamp(19px,2.3vw,36px);max-width:13ch;overflow-wrap:break-word;hyphens:manual}
+#projects .work-item-intro{font:clamp(17px,1.54vw,24px)/1.46 "Helvetica Neue",Arial,sans-serif;letter-spacing:-.025em;margin:0;max-width:32ch}
+#projects .work-item-year{font:12px/1.5 var(--mono,monospace);color:var(--muted,#53615e);margin:30px 0 0}
+#projects .work-item-cover{margin:0;min-width:0}
+#projects .work-item-cover img{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;max-height:none;background:#e5e7e5}
+#projects .work-item-cover--screen img{object-fit:contain;background:#e9e9e7}
+#projects .work-item-cover figcaption{margin-top:9px;font:11px/1.5 var(--mono,monospace);letter-spacing:.04em;max-width:95%;overflow-wrap:break-word;color:var(--muted,#53615e)}
+#projects .work-item-details{grid-column:1/-1;min-width:0;padding:0;margin-top:clamp(22px,3vw,46px);border-top:1px solid var(--rule,#cbd1ce)}
+#projects .work-item-details summary{display:flex;align-items:center;justify-content:space-between;gap:20px;letter-spacing:.04em;font:12px/1.6 var(--mono,monospace);text-transform:uppercase;color:var(--ink,#18201f);padding:15px 0;cursor:pointer;min-height:50px}
+#projects .work-item-details summary::after{content:"+";font-size:18px;line-height:1;flex:0 0 auto;font-weight:400}
+#projects .work-item-details[open] summary::after{content:"−"}
+#projects .work-item-details summary:hover{text-decoration:none;opacity:.65}
+#projects .work-item-detail-body{border-top:1px solid var(--rule,#cbd1ce);padding:clamp(24px,3vw,50px) 0 16px;max-width:1200px}
+#projects .work-item-detail-body>p{max-width:62ch;font:clamp(16px,1.45vw,21px)/1.67 "Helvetica Neue",Arial,sans-serif;margin:0 0 24px;letter-spacing:-.009em}
+#projects .project-meta{max-width:75ch;padding:17px 0;margin:25px 0;border-block:1px solid var(--rule,#cbd1ce);font:12px/1.7 var(--mono,monospace);color:var(--muted,#53615e)}
+#projects .project-status{font-style:italic;color:var(--muted,#53615e)}
+#projects .project-link a{font-size:16px;text-decoration:underline;text-underline-offset:4px}
+#projects .project-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(12px,2.2vw,30px);margin-top:30px;max-width:none}
+#projects .project-gallery figure{margin:0;min-width:0}
+#projects .project-gallery img{width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;max-height:none;background:#e6e7e5}
+#projects .project-gallery figcaption{margin-top:7px;font:11px/1.4 var(--mono,monospace)}
+#projects .work-item-empty{padding:40px 0 70px;font:clamp(17px,1.5vw,23px)/1.5 "Helvetica Neue",Arial,sans-serif;color:var(--muted,#53615e);max-width:44ch}
+@media(max-width:900px){#projects .portfolio-category-heading{grid-template-columns:65px 1fr;row-gap:15px}#projects .portfolio-category-description{grid-column:2;max-width:42ch}#projects .work-item{column-gap:clamp(20px,3vw,36px)}}
+@media(max-width:690px){#projects .work-item,#projects .work-item[hidden]{grid-template-columns:1fr;padding:29px 0 52px}#projects .work-item-copy{padding:0;align-self:start}#projects .work-item-number{margin-bottom:14px}#projects .work-item-title{font-size:clamp(36px,10vw,58px);max-width:none;margin-bottom:16px}#projects .work-item-intro{margin:0 0 23px;max-width:44ch}#projects .work-item-year{margin:0 0 16px}#projects .work-item-cover{margin-top:5px}#projects .work-item-details{margin-top:18px}#projects .project-gallery{grid-template-columns:1fr}#projects .portfolio-category-heading h3{font-size:clamp(38px,10vw,60px)}#work .filters{gap:6px 14px;top:var(--bar,52px)}#work .filters a{font-size:11px}#projects .portfolio-category{scroll-margin-top:150px}}
+
+/* Give the mobile header enough room; the prior three-column layout compressed every link. */
+
+/* Motion & Film v4: original artwork to be added; typographic placeholders are clearly labeled. */
+#projects .motion-artwork-placeholder{position:relative;width:100%;aspect-ratio:16/10;min-height:200px;background:#dcdfdd;color:#18201f;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;padding:clamp(18px,2vw,35px);border:1px solid #cad0cc;isolation:isolate}
+#projects .motion-artwork-placeholder::before{content:"";pointer-events:none;position:absolute;inset:0;background:linear-gradient(to right,transparent calc(33.333% - .5px),#c7cdca calc(33.333% - .5px),#c7cdca calc(33.333% + .5px),transparent calc(33.333% + .5px),transparent calc(66.666% - .5px),#c7cdca calc(66.666% - .5px),#c7cdca calc(66.666% + .5px),transparent calc(66.666% + .5px)),linear-gradient(to bottom,transparent 49.9%,#c7cdca 50%,transparent 50.1%);opacity:.65;z-index:-1}
+#projects .motion-artwork-placeholder--0{background:#e4e4e1}#projects .motion-artwork-placeholder--1{background:#c9cdcc}#projects .motion-artwork-placeholder--2{background:#dbdcda}#projects .motion-artwork-placeholder--3{background:#d0d4d1}#projects .motion-artwork-placeholder--4{background:#e0e2de}
+#projects .motion-artwork-label,#projects .motion-artwork-footer{display:flex;align-items:center;justify-content:space-between;gap:12px;font:clamp(10px,.75vw,13px)/1.5 var(--mono,monospace);letter-spacing:.04em}
+#projects .motion-artwork-name{display:block;position:relative;max-width:100%;font:450 clamp(42px,5vw,90px)/.98 "Helvetica Neue",Arial,sans-serif;letter-spacing:-.074em;overflow-wrap:anywhere;hyphens:manual;margin:20px 0;align-self:center;text-align:center}
+#projects .motion-artwork-footer{border-top:1px solid #aeb9b3;padding-top:14px}
+#projects .work-item--motion .work-item-cover figcaption{opacity:.8}
+@media(max-width:690px){#projects .motion-artwork-placeholder{min-height:180px;padding:18px}#projects .motion-artwork-name{font-size:clamp(40px,10vw,60px);margin:12px 0}#projects .motion-artwork-label,#projects .motion-artwork-footer{font-size:10px}}
+
+/* Motion & Film v5 — original supplied stills and playable portrait video. */
+#projects .work-item-cover--motion-image{position:relative;min-width:0;overflow:hidden}
+#projects .work-item-cover--motion-image img{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;background:#080909;max-height:none}
+#projects .work-item-cover--motion-tiger img{object-fit:contain;background:#000}
+#projects .motion-film-player{max-width:740px;margin:26px 0 15px;padding:18px;background:#070707;display:flex;justify-content:center;align-items:center;flex-direction:column;gap:12px}
+#projects .motion-film-player video{display:block;width:min(100%,340px);height:auto;max-height:75vh;aspect-ratio:3/4;object-fit:contain;background:#050505}
+#projects .motion-film-note{color:#c2c5c2;font:11px/1.4 var(--mono,monospace);letter-spacing:.03em;margin:0;text-align:center}
+@media(max-width:690px){#projects .motion-film-player{margin:20px 0;padding:12px}#projects .motion-film-player video{width:min(100%,300px);max-height:65vh}}
+
+
+/* v6 — Full original films: responsive, uncropped, keyboard-accessible players */
+#projects .project-film{margin:clamp(26px,4vw,56px) 0 22px;border-top:1px solid var(--rule,#cbd1ce);padding-top:clamp(22px,3vw,40px);width:100%;max-width:1100px}
+#projects .project-film-label{font:500 clamp(15px,1.35vw,19px)/1.4 var(--mono,monospace);margin:0 0 18px;letter-spacing:-.02em}
+#projects .project-film video{display:block;width:100%;height:auto;aspect-ratio:16/9;max-height:80vh;object-fit:contain;background:#070707;border:0;outline-offset:4px}
+#projects .project-film-caption{font:11px/1.55 var(--mono,monospace);color:var(--muted,#53615e);letter-spacing:.04em;max-width:unset;margin:10px 0 0}
+#projects .work-item .work-item-intro{hyphens:none;overflow-wrap:break-word}
+#projects .work-item-cover img{image-rendering:auto}
+@media(max-width:690px){#projects .project-film{margin:22px 0 12px;padding-top:18px}#projects .project-film video{max-height:60vh}}
